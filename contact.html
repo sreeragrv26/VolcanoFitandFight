@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &amp; Free Trial | Volcano Fit and Fight</title>
+<meta name="description" content="Get in touch with Volcano Fit and Fight or book your free trial class at our gym.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand"><span class="flame">&#128293;</span> Volcano Fit &amp; Fight</a>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="classes.html">Classes</a></li>
+      <li><a href="trainers.html">Trainers</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta">Free Trial Class</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <span class="eyebrow">Get In Touch</span>
+  <h1>Visit Us or Book a Free Class</h1>
+  <p>Questions about classes or membership? Send us a message or stop by the gym.</p>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <h3>Gym Info</h3>
+        <ul class="info-list">
+          <li><strong>Address</strong> 123 Ember Street, Your City, ST 00000</li>
+          <li><strong>Phone</strong> (555) 123-4567</li>
+          <li><strong>Email</strong> hello@volcanofitandfight.com</li>
+          <li><strong>Hours</strong> Mon&ndash;Fri 6am&ndash;10pm, Sat&ndash;Sun 8am&ndash;6pm</li>
+        </ul>
+        <div class="map-placeholder">Map embed placeholder</div>
+      </div>
+      <div>
+        <form class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required>
+
+          <label for="interest">Interested In</label>
+          <select id="interest" name="interest">
+            <option>Free Trial Class</option>
+            <option>Boxing</option>
+            <option>Kickboxing</option>
+            <option>MMA</option>
+            <option>Strength &amp; Conditioning</option>
+            <option>Kids Combat Fit</option>
+            <option>Membership Pricing</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us about your goals or ask a question"></textarea>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-note">This is a demo form. Connect it to an email service, form backend, or your CRM to start receiving real inquiries.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <h4>Volcano Fit &amp; Fight</h4>
+      <p>A fitness and combat sports gym for anyone who wants to get stronger, fitter, and more confident &mdash; one round at a time.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Visit Us</h4>
+      <ul>
+        <li>123 Ember Street, Your City</li>
+        <li>Mon&ndash;Fri: 6am &ndash; 10pm</li>
+        <li>Sat&ndash;Sun: 8am &ndash; 6pm</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; <span id="year"></span> Volcano Fit and Fight. All rights reserved.
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
