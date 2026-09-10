@@ -366,6 +366,13 @@ img {
   justify-content: center;
   font-size: 3rem;
   color: var(--accent);
+  overflow: hidden;
+}
+
+.person-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .person-card .info {
