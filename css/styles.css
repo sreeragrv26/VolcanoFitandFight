@@ -529,6 +529,41 @@ img {
   border-top: none;
 }
 
+/* Testimonials */
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-card .stars {
+  color: var(--accent-2);
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+
+.testimonial-card .quote {
+  font-style: italic;
+  color: var(--text);
+  font-size: 0.95rem;
+  flex-grow: 1;
+  margin-bottom: 16px;
+}
+
+.testimonial-card .reviewer strong {
+  display: block;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.testimonial-card .reviewer span {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 /* Schedule table */
 
 .schedule-table {
