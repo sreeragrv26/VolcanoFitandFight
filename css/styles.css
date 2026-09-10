@@ -671,6 +671,19 @@ img {
   font-size: 0.9rem;
 }
 
+a.map-placeholder {
+  text-decoration: none;
+  font-weight: 600;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+a.map-placeholder:hover {
+  border-color: var(--accent);
+  border-style: solid;
+  color: var(--accent-2);
+  text-decoration: none;
+}
+
 form.contact-form {
   background: var(--card);
   border: 1px solid var(--border);
