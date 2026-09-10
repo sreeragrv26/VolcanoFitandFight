@@ -52,4 +52,29 @@ document.addEventListener("DOMContentLoaded", function () {
       window.location.href = mailtoLink;
     });
   }
+
+  var revealTargets = document.querySelectorAll(".card, .person-card, .price-card");
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (revealTargets.length && "IntersectionObserver" in window && !reduceMotion) {
+    revealTargets.forEach(function (el) {
+      el.classList.add("reveal");
+    });
+
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    revealTargets.forEach(function (el) {
+      observer.observe(el);
+    });
+  }
 });
