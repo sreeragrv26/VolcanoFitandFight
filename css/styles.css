@@ -213,33 +213,6 @@ img {
     radial-gradient(ellipse at top, rgba(232, 36, 28, 0.18), transparent 60%),
     linear-gradient(180deg, var(--bg) 0%, var(--bg-alt) 100%);
   border-bottom: 1px solid var(--border);
-  overflow: hidden;
-}
-
-.hero-logo-bg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: min(42vw, 460px);
-  max-height: 55vh;
-  height: auto;
-  transform: translate(-50%, -50%);
-  opacity: 0.12;
-  pointer-events: none;
-  z-index: 0;
-  user-select: none;
-}
-
-@media (max-width: 700px) {
-  .hero-logo-bg {
-    width: min(65vw, 300px);
-    opacity: 0.1;
-  }
-}
-
-.hero > * {
-  position: relative;
-  z-index: 1;
 }
 
 .hero .eyebrow {
