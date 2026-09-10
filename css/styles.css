@@ -97,9 +97,25 @@ img {
   letter-spacing: 0.03em;
 }
 
-.brand img {
-  height: 42px;
+.brand-icon {
+  height: 40px;
   width: auto;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+
+.brand-text em {
+  font-style: normal;
+  color: var(--accent);
+  font-size: 0.52em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 2px;
 }
 
 .brand:hover {
