@@ -204,13 +204,21 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: min(1100px, 130vw);
+  width: min(42vw, 460px);
+  max-height: 55vh;
   height: auto;
   transform: translate(-50%, -50%);
-  opacity: 0.08;
+  opacity: 0.12;
   pointer-events: none;
   z-index: 0;
   user-select: none;
+}
+
+@media (max-width: 700px) {
+  .hero-logo-bg {
+    width: min(65vw, 300px);
+    opacity: 0.1;
+  }
 }
 
 .hero > * {
