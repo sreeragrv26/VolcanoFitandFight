@@ -6,9 +6,10 @@
   --card: #221d20;
   --text: #f3ede9;
   --text-dim: #b8aca7;
-  --accent: #ff5722;
-  --accent-2: #ffb020;
-  --accent-dark: #c1360f;
+  --accent: #e8241c;
+  --accent-2: #f8c000;
+  --accent-dark: #8f1712;
+  --on-accent: #ffffff;
   --border: #332b2e;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
   --radius: 10px;
@@ -96,13 +97,13 @@ img {
   letter-spacing: 0.03em;
 }
 
-.brand:hover {
-  text-decoration: none;
+.brand img {
+  height: 42px;
+  width: auto;
 }
 
-.brand .flame {
-  color: var(--accent);
-  font-size: 1.5rem;
+.brand:hover {
+  text-decoration: none;
 }
 
 .nav-links {
@@ -127,7 +128,7 @@ img {
 
 .nav-cta {
   background: var(--accent);
-  color: #121013 !important;
+  color: var(--on-accent) !important;
   padding: 10px 20px;
   border-radius: 999px;
   font-weight: 700;
@@ -245,7 +246,7 @@ img {
 
 .btn-primary {
   background: var(--accent);
-  color: #121013;
+  color: var(--on-accent);
 }
 
 .btn-primary:hover {
@@ -411,7 +412,7 @@ img {
   left: 50%;
   transform: translateX(-50%);
   background: var(--accent);
-  color: #121013;
+  color: var(--on-accent);
   font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -522,16 +523,16 @@ img {
   border-radius: var(--radius);
   padding: 48px 32px;
   text-align: center;
-  color: #121013;
+  color: var(--on-accent);
 }
 
 .cta-banner h2 {
-  color: #121013;
+  color: var(--on-accent);
   margin-bottom: 10px;
 }
 
 .cta-banner p {
-  color: rgba(18, 16, 19, 0.8);
+  color: rgba(255, 255, 255, 0.85);
   margin-bottom: 24px;
 }
 
