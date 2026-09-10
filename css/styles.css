@@ -215,6 +215,32 @@ img {
   border-bottom: 1px solid var(--border);
 }
 
+.hero-brand {
+  margin-bottom: 18px;
+}
+
+.hero-brand-main {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: clamp(2.6rem, 9vw, 5.2rem);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text);
+  line-height: 1;
+}
+
+.hero-brand-sub {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-top: 8px;
+}
+
 .hero .eyebrow {
   display: inline-block;
   color: var(--accent);
