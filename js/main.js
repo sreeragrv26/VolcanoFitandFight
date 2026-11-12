@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   var ENQUIRY_EMAIL = "volcanofitandfight@gmail.com";
+  var BANGALORE_WHATSAPP = "919591997839";
 
   var form = document.getElementById("enquiry-form");
   if (form) {
@@ -34,17 +35,30 @@ document.addEventListener("DOMContentLoaded", function () {
         "Interested In: " + interest + "\n\n" +
         "Message:\n" + (message || "(none)");
 
-      var mailtoLink =
-        "mailto:" + ENQUIRY_EMAIL +
-        "?subject=" + encodeURIComponent(subject) +
-        "&body=" + encodeURIComponent(body);
-
       var note = form.querySelector(".form-status");
       if (!note) {
         note = document.createElement("p");
         note.className = "form-status form-note";
         form.appendChild(note);
       }
+
+      // Bangalore (Sarjapura) enquiries go to the Bangalore WhatsApp number;
+      // Kerala enquiries keep going to the email address as before.
+      if (location.indexOf("Bangalore") !== -1) {
+        var whatsappLink =
+          "https://wa.me/" + BANGALORE_WHATSAPP +
+          "?text=" + encodeURIComponent("Hi Volcano Fit and Fight, website enquiry:\n\n" + body);
+        note.textContent =
+          "Opening WhatsApp now. If nothing happens, please call or WhatsApp +91 95919 97839.";
+        window.location.href = whatsappLink;
+        return;
+      }
+
+      var mailtoLink =
+        "mailto:" + ENQUIRY_EMAIL +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+
       note.textContent =
         "Opening your email app now. If nothing happens, please email " +
         ENQUIRY_EMAIL + " or WhatsApp us directly.";
